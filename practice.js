@@ -45,3 +45,19 @@ const fizzBuzz = (n) => {
 }
 
 fizzBuzz(50);
+
+// basic html manipluation
+const main = document.getElementById("main");
+
+// fetch call to fake api
+fetch("https://jsonplaceholder.typicode.com/posts/")
+    .then(res => res.json())
+    .then(data => {
+        data.forEach((data) => {
+            main.append(data.title)
+            console.log(data)
+        })
+
+
+    })
+
