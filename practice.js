@@ -53,11 +53,11 @@ const main = document.getElementById("main");
 fetch("https://jsonplaceholder.typicode.com/posts/")
     .then(res => res.json())
     .then(data => {
-        data.forEach((data) => {
-            main.append(data.title)
-            console.log(data)
+        let arr = [];
+        arr.push(data)
+        arr.forEach((data) => {
+            main.append(data[1].title);
+            console.log(data);
         })
-
-
     })
 
