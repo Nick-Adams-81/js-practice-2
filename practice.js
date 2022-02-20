@@ -33,10 +33,19 @@ const reverseString = (string) => {
 
 console.log(reverseString(string));
 
+// number palindrome
+const numsArr = [1, 2, 2, 1];
 
+const numsPalindrome = (input) => {
+
+    const reverseNumPalindrome = input.toString().split("").reverse().join("");
+    return input.toString() === reverseNumPalindrome;
+}
+
+console.log(numsPalindrome(numsArr))
 // fizz buzz
 const fizzBuzz = (n) => {
-    for (let i = 0; i <= n; i++) {
+    for (let i = 1; i <= n; i++) {
         if (i % 15 === 0) console.log("FizzBuzz");
         else if (i % 3 === 0) console.log("Fizz");
         else if (i % 5 === 0) console.log("Buzz");
