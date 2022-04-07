@@ -57,6 +57,7 @@ fizzBuzz(50);
 
 // basic html manipluation
 const main = document.getElementById("main");
+const body = document.getElementById("body");
 
 // fetch call to fake api
 fetch("https://jsonplaceholder.typicode.com/posts/")
@@ -64,9 +65,26 @@ fetch("https://jsonplaceholder.typicode.com/posts/")
     .then(data => {
         let arr = [];
         arr.push(data)
-        arr.forEach((data) => {
-            main.append("Name: " + data[1].title + "\n Data: " + data[1].body);
+        arr.forEach(data => {
+            main.append("Name: " + data[1].title);
+            body.append("Data: " + data[1].body)
             console.log(data);
         })
     })
+
+
+
+    let image1 = "yoururlhere";
+    let array = [1, 2, 3, 4, 5];
+
+
+    for(let i = 0; i < array.length; i++) {
+        console.log(array[i]);
+    }
+
+    let arr = [1, 2, 3, 4, 5]
+    for(let i = arr.length -1; i >= 0; i--) {
+        console.log(arr[i])
+    }
+
 
