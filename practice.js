@@ -66,8 +66,8 @@ fetch("https://jsonplaceholder.typicode.com/posts/")
         let arr = [];
         arr.push(data)
         arr.forEach(data => {
-            main.append("Name: " + data[1].title);
-            body.append("Data: " + data[1].body)
+            main.append(`Name: ${data[1].title}`);
+            body.append(`Data: ${data[1].body}`)
             console.log(data);
         })
     })
