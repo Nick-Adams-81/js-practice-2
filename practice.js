@@ -9,7 +9,7 @@ console.log(newString);
 
 
 // fibonachi
-const fib = (n) => {
+const fib = n => {
     let a = 0;
     let b = 1;
     for (let i = 0; i < n; i++) {
@@ -26,7 +26,7 @@ for (let i = 0; i < 10; i++) {
 }
 
 // is palindrome
-const reverseString = (string) => {
+const reverseString = string => {
     const reverseString = string.split("").reverse().join("");
     return string === reverseString;
 }
@@ -37,7 +37,6 @@ console.log(reverseString(string));
 const numsArr = [1, 2, 2, 1];
 
 const numsPalindrome = (input) => {
-
     const reverseNumPalindrome = input.toString().split("").reverse().join("");
     return input.toString() === reverseNumPalindrome;
 }
