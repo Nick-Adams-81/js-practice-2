@@ -33,6 +33,12 @@ const isPalindrome = string => {
 
 console.log(isPalindrome(string));
 
+// reverse string
+const reverseString = string => {
+    return string.split("").reverse().join("");
+}
+
+console.log(reverseString("hello"));
 // alternate reverse string method
 const reverseString2 = string => {
     let array2 = [];
@@ -41,7 +47,7 @@ const reverseString2 = string => {
         array2.push(string[i]);
     }
 
-    return array2.join("")
+    return array2.join("");
 }
 
 console.log(reverseString2("testing"));
