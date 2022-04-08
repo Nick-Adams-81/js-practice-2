@@ -39,15 +39,16 @@ const reverseString = string => {
 }
 
 console.log(reverseString("hello"));
+
 // alternate reverse string method
 const reverseString2 = string => {
-    let array2 = [];
+    let array = [];
 
     for(let i = string.length - 1; i >=0; i--) {
-        array2.push(string[i]);
+        array.push(string[i]);
     }
 
-    return array2.join("");
+    return array.join("");
 }
 
 console.log(reverseString2("testing"));
