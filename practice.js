@@ -26,12 +26,25 @@ for (let i = 0; i < 10; i++) {
 }
 
 // is palindrome
-const reverseString = string => {
+const isPalindrome = string => {
     const reverseString = string.split("").reverse().join("");
     return string === reverseString;
 }
 
-console.log(reverseString(string));
+console.log(isPalindrome(string));
+
+// alternate reverse string method
+const reverseString2 = string => {
+    let array2 = [];
+
+    for(let i = string.length - 1; i >=0; i--) {
+        array2.push(string[i]);
+    }
+
+    return array2.join("")
+}
+
+console.log(reverseString2("testing"));
 
 // number palindrome
 const numsArr = [1, 2, 2, 1];
@@ -41,7 +54,7 @@ const numsPalindrome = (input) => {
     return input.toString() === reverseNumPalindrome;
 }
 
-console.log(numsPalindrome(numsArr))
+console.log(numsPalindrome(numsArr));
 // fizz buzz
 const fizzBuzz = (n) => {
     for (let i = 1; i <= n; i++) {
@@ -68,8 +81,8 @@ fetch("https://jsonplaceholder.typicode.com/posts/")
             main.append(`Name: ${data[1].title}`);
             body.append(`Data: ${data[1].body}`)
             console.log(data);
-        })
-    })
+        });
+    });
 
 
 
@@ -81,9 +94,13 @@ fetch("https://jsonplaceholder.typicode.com/posts/")
         console.log(array[i]);
     }
 
-    let arr = [1, 2, 3, 4, 5]
+    let arr = [1, 2, 3, 4, 5];
     for(let i = arr.length -1; i >= 0; i--) {
-        console.log(arr[i])
+        console.log(arr[i]);
     }
+
+  
+
+    
 
 
