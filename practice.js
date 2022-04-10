@@ -62,6 +62,7 @@ const numsPalindrome = (input) => {
 }
 
 console.log(numsPalindrome(numsArr));
+
 // fizz buzz
 const fizzBuzz = n => {
     for (let i = 1; i <= n; i++) {
