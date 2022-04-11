@@ -49,6 +49,11 @@ const longestWord = str => {
 }
 console.log(longestWord("The quick brown fox jumped over the lazy dog"));
 
+// largest number in array
+const largestNumsinArr = arr => {
+    return arr.map(Function.apply.bind(Math.max, null))
+}
+console.log(largestNumsInArr([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
 // is palindrome
 const isPalindrome = string => {
     const reverseString = string.split("").reverse().join("");
