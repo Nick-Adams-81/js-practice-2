@@ -47,7 +47,7 @@ console.log(factoral(10));
 const longestWord = str => {
     return Math.max(...str.split(" ").map(word => word.length));
 }
-console.log(longestWord("hello motherfuckin cocksuck"));
+console.log(longestWord("The quick brown fox jumped over the lazy dog"));
 
 // is palindrome
 const isPalindrome = string => {
