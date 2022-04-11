@@ -28,21 +28,20 @@ for (let i = 0; i < 10; i++) {
 // convert celsius to farenheit
 const convertToF = c => {
     let farenheit;
-    farenheit = (c * 9/5) + 32;
+    farenheit = (c * 9 / 5) + 32;
     return farenheit;
-}  
+}
 console.log(convertToF(20));
 
 // factoral of num
 const factoral = num => {
-    let a = 1;
-    for(let i = 2; i <= num; i++) {
-        a *= i;
-    }
-    return a;
+    return num < 0 ? 1 :
+        new Array(num)
+            .fill(undefined)
+            .reduce((a, _, index) => a * (index + 1), 1);
 }
 
-console.log(factoral(5));
+console.log(factoral(10));
 
 // is palindrome
 const isPalindrome = string => {
@@ -63,7 +62,7 @@ console.log(reverseString("hello"));
 const reverseString2 = string => {
     let array = [];
 
-    for(let i = string.length - 1; i >=0; i--) {
+    for (let i = string.length - 1; i >= 0; i--) {
         array.push(string[i]);
     }
 
@@ -100,23 +99,23 @@ const eratosthenes = n => {
     let array = [], upperLimit = Math.sqrt(n), output = [];
 
     // making an array from 2 to (n - 1)
-    for(let i = 0; i < n; i++) {
+    for (let i = 0; i < n; i++) {
         array.push(true)
     }
 
     // remove multiples of primes starting from 2, 3, 5, ...
-    for(let i = 2; i <= upperLimit; i++) {
-        if(array[i]) {
-            for(let j = i * i; j < n; j += i) {
+    for (let i = 2; i <= upperLimit; i++) {
+        if (array[i]) {
+            for (let j = i * i; j < n; j += i) {
                 array[j] = false;
             }
-            
+
         }
     }
 
     // all array[i] set to true are primes
-    for(let i = 2; i < n; i++) {
-        if(array[i]) {
+    for (let i = 2; i < n; i++) {
+        if (array[i]) {
             output.push(i)
         }
     }
@@ -159,8 +158,8 @@ fetch("https://jsonplaceholder.typicode.com/posts/")
     //     console.log(arr[i]);
     // }
 
-  
 
-    
+
+
 
 
