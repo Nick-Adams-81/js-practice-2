@@ -25,6 +25,15 @@ for (let i = 0; i < 10; i++) {
     console.log(fib(i));
 }
 
+// convert celsius to farenheit
+const convertToF = c => {
+    let farenheit;
+    farenheit = (c * 9/5) + 32;
+    return farenheit;
+}  
+
+console.log(convertToF(20));
+
 // is palindrome
 const isPalindrome = string => {
     const reverseString = string.split("").reverse().join("");
