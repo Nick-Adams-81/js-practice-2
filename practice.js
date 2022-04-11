@@ -31,8 +31,18 @@ const convertToF = c => {
     farenheit = (c * 9/5) + 32;
     return farenheit;
 }  
-
 console.log(convertToF(20));
+
+// factoral of num
+const factoral = num => {
+    let a = 1;
+    for(let i = 2; i <= num; i++) {
+        a *= i;
+    }
+    return a;
+}
+
+console.log(factoral(5));
 
 // is palindrome
 const isPalindrome = string => {
@@ -82,7 +92,7 @@ const fizzBuzz = n => {
     }
 }
 
-fizzBuzz(50);
+// fizzBuzz(50);
 
 // Sieve of Eratosthenes
 const eratosthenes = n => {
