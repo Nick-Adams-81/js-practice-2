@@ -43,6 +43,12 @@ const factoral = num => {
 
 console.log(factoral(10));
 
+// longest word in a string
+const longestWord = str => {
+    return Math.max(...str.split(" ").map(word => word.length));
+}
+console.log(longestWord("hello motherfuckin cocksuck"));
+
 // is palindrome
 const isPalindrome = string => {
     const reverseString = string.split("").reverse().join("");
