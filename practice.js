@@ -75,6 +75,39 @@ const fizzBuzz = n => {
 
 fizzBuzz(50);
 
+// Sieve of Eratosthenes
+const eratosthenes = n => {
+    // setting up variables
+    let array = [], upperLimit = Math.sqrt(n), output = [];
+
+    // making an array from 2 to (n - 1)
+    for(let i = 0; i < n; i++) {
+        array.push(true)
+    }
+
+    // remove multiples of primes starting from 2, 3, 5, ...
+    for(let i = 2; i <= upperLimit; i++) {
+        if(array[i]) {
+            for(let j = i * i; j < n; j += i) {
+                array[j] = false;
+            }
+            
+        }
+    }
+
+    // all array[i] set to true are primes
+    for(let i = 2; i < n; i++) {
+        if(array[i]) {
+            output.push(i)
+        }
+    }
+
+    return output;
+
+};
+
+console.log(eratosthenes(100));
+
 // basic html manipluation
 const main = document.getElementById("main");
 const body = document.getElementById("body");
@@ -88,24 +121,24 @@ fetch("https://jsonplaceholder.typicode.com/posts/")
         arr.forEach(data => {
             main.append(`Name: ${data[1].title}`);
             body.append(`Data: ${data[1].body}`)
-            console.log(data);
+            // console.log(data);
         });
     });
 
 
 
-    let image1 = "yoururlhere";
-    let array = [1, 2, 3, 4, 5];
+    // let image1 = "yoururlhere";
+    // let array = [1, 2, 3, 4, 5];
 
 
-    for(let i = 0; i < array.length; i++) {
-        console.log(array[i]);
-    }
+    // for(let i = 0; i < array.length; i++) {
+    //     console.log(array[i]);
+    // }
 
-    let arr = [1, 2, 3, 4, 5];
-    for(let i = arr.length -1; i >= 0; i--) {
-        console.log(arr[i]);
-    }
+    // let arr = [1, 2, 3, 4, 5];
+    // for(let i = arr.length -1; i >= 0; i--) {
+    //     console.log(arr[i]);
+    // }
 
   
 
