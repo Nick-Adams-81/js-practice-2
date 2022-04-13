@@ -21,3 +21,12 @@ console.log(booWho(false));
 // capitalize first letter of every word in a string
 const titleCase = str => str.toLowerCase().replace(/(^|\s)\S/g, L => L.toUpperCase());
 console.log(titleCase("hello cruel world"));
+
+// slice and splice array
+const frankenSplice = (arr1, arr2, n) => {
+    let localArr = arr2.slice();
+    localArr.splice(n, 0, ...arr1);
+    return localArr;
+}
+
+console.log(frankenSplice([1,2,3], [4,5],1));
