@@ -17,3 +17,7 @@ console.log(findEl([1, 3, 5, 9, 10], modulus));
 // check if typeof input is a boolean
 const booWho = bool => typeof bool === "boolean"
 console.log(booWho(false));
+
+// capitalize first letter of every word in a string
+const titleCase = str => str.toLowerCase().replace(/(^|\s)\S/g, L => L.toUpperCase());
+console.log(titleCase("hello cruel world"));
