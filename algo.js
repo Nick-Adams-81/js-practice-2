@@ -28,9 +28,16 @@ const frankenSplice = (arr1, arr2, n) => {
     localArr.splice(n, 0, ...arr1);
     return localArr;
 }
-
 console.log(frankenSplice([1,2,3], [4,5],1));
 
 // remove false values from an array
 const bouncer = arr => arr.filter(Boolean);
 console.log(bouncer(["hello", 4, false, "hi"]));
+
+// get index of ints
+const getIndexToIns = (arr, num) => {
+    return arr.filter(val => num > val).length;
+}
+console.log(getIndexToIns([10, 20, 30, 40, 50], 30));
+
+
