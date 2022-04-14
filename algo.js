@@ -40,4 +40,8 @@ const getIndexToIns = (arr, num) => {
 }
 console.log(getIndexToIns([10, 20, 30, 40, 50], 30));
 
+// mutate two strings
+const mutation = arr => arr[1].toLowerCase().split("").every(letter => arr[0].toLowerCase().indexOf(letter) !== -1);
+console.log(mutation(["hello", "hello"]));
+
 
