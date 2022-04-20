@@ -12,6 +12,10 @@ const salesPeeps = [
     {name: "davey pageturns", sales: 450},
     {name: "Ben Sisko", sales: 225}
 ];
+// ---ForOf loop--- //
+for(let e in arr) {
+    console.log(e);
+}
 
 // ---Map--- //
 
@@ -50,5 +54,3 @@ const countWords = sentence => {
 }
 console.log(countWords("mary had a little lamb little lamb little lamb"))
 
-let newTag = document.createElement("input");
-// document.body.appendChild(newTag);
