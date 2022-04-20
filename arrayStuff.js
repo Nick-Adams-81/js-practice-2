@@ -12,6 +12,7 @@ const salesPeeps = [
     {name: "davey pageturns", sales: 450},
     {name: "Ben Sisko", sales: 225}
 ];
+
 // ---Map--- //
 
 // using map to transform array[arr]
@@ -49,4 +50,5 @@ const countWords = sentence => {
 }
 console.log(countWords("mary had a little lamb little lamb little lamb"))
 
-
+let newTag = document.createElement("input");
+// document.body.appendChild(newTag);
