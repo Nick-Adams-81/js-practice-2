@@ -15,4 +15,8 @@ console.log(increment);
 let evens = arr.filter(n => n % 2 === 0);
 console.log(evens);
 
+// reduce //
+let sum = arr.reduce((accumulation, currentNums) => {return accumulation + currentNums}, 0);
+console.log(sum);
+
 
