@@ -10,7 +10,9 @@ let increment = arr.map(n => n + 1);
 console.log(increment);
 
 // filter //
-let evens = arr.filter(n => n % 2 === 0)
-console.log(evens)
+
+// using filter to sort even numbers from array[arr]
+let evens = arr.filter(n => n % 2 === 0);
+console.log(evens);
 
 
