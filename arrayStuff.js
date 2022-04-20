@@ -12,10 +12,15 @@ const salesPeeps = [
     {name: "davey pageturns", sales: 450},
     {name: "Ben Sisko", sales: 225}
 ];
-// ---ForOf loop--- //
+// ---advanced loops--- //
+
+// for of loop
 for(let e in arr) {
     console.log(e);
 }
+
+// for each loop
+salesPeeps.forEach(e => console.log(e));
 
 // ---Map--- //
 
