@@ -57,5 +57,5 @@ const countWords = sentence => {
     }, {});
     return wordCountObj; 
 }
-console.log(countWords("mary had a little lamb little lamb little lamb"))
+console.log(countWords("mary had a little lamb little lamb little lamb"));
 

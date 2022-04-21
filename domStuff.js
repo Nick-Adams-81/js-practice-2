@@ -14,19 +14,15 @@ btn.addEventListener("click", () => {
 newBody.appendChild(btn);
 
 // fetch api with async await
-const loadUsers = async () => {
-    return (await fetch("https://jsonplaceholder.typicode.com/users")).json()
-    // const res = await fetch()
-    // const users = await res.json();
-    // return users;
-}
+const loadUsers = async () =>  (await fetch("https://jsonplaceholder.typicode.com/users")).json();
+
 
 document.addEventListener("DOMContentLoaded", async () => {
     let users = []
     try {
         users = await loadUsers();
     } catch (err) {
-        console.log({ message: err.message })
+        console.error({ message: err.message })
     }
     console.log(users);
 })
