@@ -19,6 +19,11 @@ for(let e in arr) {
     console.log(e);
 }
 
+// loop backward through an array
+for(let i = arr.length -1; i >=0; i--) {
+    console.log(arr[i]);
+}
+
 // for each loop
 salesPeeps.forEach(e => console.log(e));
 
