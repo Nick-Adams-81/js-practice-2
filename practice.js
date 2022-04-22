@@ -63,11 +63,6 @@ const isPalindrome = string => {
 
 console.log(isPalindrome(string));
 
-// reverse string
-const reverseString = string => {
-    return string.split("").reverse().join("");
-}
-console.log(reverseString("hello"));
 
 // confirm string ends in a character
 const confirmEnding = (str, target) => {
@@ -75,7 +70,11 @@ const confirmEnding = (str, target) => {
 }
 console.log(confirmEnding("Nick", "c"));
 
-
+// reverse string
+const reverseString = string => {
+    return string.split("").reverse().join("");
+}
+console.log(reverseString("hello"));
 
 // alternate reverse string method
 const reverseString2 = string => {
