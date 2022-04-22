@@ -86,7 +86,6 @@ const reverseString2 = string => {
 
     return array.join("");
 }
-
 console.log(reverseString2("testing"));
 
 // number palindrome
@@ -96,7 +95,6 @@ const numsPalindrome = (input) => {
     const reverseNumPalindrome = input.toString().split("").reverse().join("");
     return input.toString() === reverseNumPalindrome;
 }
-
 console.log(numsPalindrome(numsArr));
 
 // fizz buzz
@@ -108,7 +106,6 @@ const fizzBuzz = n => {
         else console.log(i);
     }
 }
-
 // fizzBuzz(50);
 
 // Sieve of Eratosthenes
@@ -127,7 +124,6 @@ const eratosthenes = n => {
             for (let j = i * i; j < n; j += i) {
                 array[j] = false;
             }
-
         }
     }
 
@@ -141,7 +137,6 @@ const eratosthenes = n => {
     return output;
 
 };
-
 console.log(eratosthenes(100));
 
 // basic html manipluation
