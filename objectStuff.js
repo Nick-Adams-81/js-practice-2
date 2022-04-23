@@ -51,3 +51,9 @@ car.honk = () => {
     console.log("honk!");
 }
 car.honk();
+
+// object destructuring
+let person = { name1: "Nick A", age1: 41 };
+let { name1, age1 } = person;
+console.log(name1);
+console.log(age1);
