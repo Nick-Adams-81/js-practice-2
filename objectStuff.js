@@ -42,4 +42,6 @@ let cars = [
             age: 40
         }
     }
-]
+];
+
+console.log(`my primary car is a ${cars[0].make} model ${cars[0]. model} with ${cars[0].features}, owned by ${cars[0].owner.name}`)
