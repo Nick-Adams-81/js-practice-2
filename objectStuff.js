@@ -21,3 +21,25 @@ console.log(newCar["make"]);
 
 // using dot notation
 console.log(newCar.model);
+
+// object with nested values
+let cars = [
+    {
+        make: "Tesla",
+        model: "S",
+        features: ["Automatic transmission", "auto-pilot", "air conditioning"],
+        owner: {
+            name: "Nick",
+            age: 40
+        }
+    },
+    {
+        make: "Ford",
+        model: "Mustang",
+        features: ["maual transmission", "V-8", "air conditioning"],
+        owner: {
+            name: "Nick",
+            age: 40
+        }
+    }
+]
