@@ -13,3 +13,11 @@ newCar.make = "Tesla";
 newCar.model = "3";
 newCar.year = 2019;
 console.log(newCar);
+
+// accessing object properties
+
+// using array notation
+console.log(newCar["make"]);
+
+// using dot notation
+console.log(newCar.model);
