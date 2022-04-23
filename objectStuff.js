@@ -44,4 +44,10 @@ let cars = [
     }
 ];
 
-console.log(`my primary car is a ${cars[0].make} model ${cars[0]. model} with ${cars[0].features}, owned by ${cars[0].owner.name}`)
+console.log(`my primary car is a ${cars[0].make} model ${cars[0]. model} with ${cars[0].features}, owned by ${cars[0].owner.name}`);
+
+// assigning a function to an object
+car.honk = () => {
+    console.log("honk!");
+}
+car.honk();
