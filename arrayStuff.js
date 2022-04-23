@@ -1,7 +1,5 @@
 "use strict";
 
-
-
 // array for testing 
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -63,4 +61,3 @@ const countWords = sentence => {
     return wordCountObj; 
 }
 console.log(countWords("mary had a little lamb little lamb little lamb"));
-
