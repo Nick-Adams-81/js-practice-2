@@ -16,7 +16,7 @@ newBody.appendChild(btn);
 // fetch api with async await
 const loadUsers = async () =>  (await fetch("https://jsonplaceholder.typicode.com/users")).json();
 
-
+// adding event listener on dom load
 document.addEventListener("DOMContentLoaded", async () => {
     let users = []
     try {
