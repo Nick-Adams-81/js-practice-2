@@ -40,7 +40,7 @@ console.log(reverseString("hello"));
 const isPalindrome = str => str.toLowerCase() === reverseString(str.toLowerCase());
 console.log(isPalindrome("boB"));
 
-// array stuff
+// array stuff //
 
 let array = [1, 2, 3, 4, 5];
 
@@ -81,7 +81,7 @@ array.filter(item => console.log(item % 2 === 0));
 let sum = array.reduce((accumulator, item) => {return accumulator + item}, 0);
 console.log(sum);
 
-// object stuff
+// object stuff //
 const myObj = {
     name: "nick",
     age: 40,
@@ -99,3 +99,12 @@ console.log(myObj.name);
 console.log(myObj.age);
 console.log(myObj.jobs);
 console.log(myObj.address);
+
+// dom stuff
+let btn = document.createElement("button");
+btn.innerText = "button";
+btn.addEventListener("click", () => {
+    alert("cliocked!");
+})
+document.body.appendChild(btn);
+
