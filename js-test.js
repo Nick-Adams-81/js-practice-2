@@ -26,6 +26,10 @@ const fizzBuzz = n => {
     }
 }
 
-fizzBuzz(50);
+// fizzBuzz(50);
+
+// strip string of vowels
+const stripString = str => str.replace(/[aeiou]/ig, "");
+console.log(stripString("hellO crUel world"));
 
 
