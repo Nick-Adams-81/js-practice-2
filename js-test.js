@@ -36,3 +36,7 @@ console.log(stripString("hellO crUel world"));
 const reverseString = str => str.split("").reverse().join("");
 console.log(reverseString("hello"));
 
+// is palindrome
+const isPalindrome = str => str.toLowerCase() === reverseString(str.toLowerCase());
+console.log(isPalindrome("boB"));
+
