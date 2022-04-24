@@ -40,10 +40,11 @@ console.log(reverseString("hello"));
 const isPalindrome = str => str.toLowerCase() === reverseString(str.toLowerCase());
 console.log(isPalindrome("boB"));
 
-//array stuff
+// array stuff
 
 let array = [1, 2, 3, 4, 5];
 
+// adding and removing elements 
 array.push(6);
 console.log(array);
 
@@ -56,3 +57,26 @@ console.log(array);
 array.shift();
 console.log(array);
 
+// looping through arrays
+// forward
+for(let i = 0; i < array.length; i++) {
+    console.log(array[i])
+}
+
+//backward
+for(let i = array.length -1; i >= 0; i--) {
+    console.log(array[i])
+}
+
+// foreach
+array.forEach(item => console.log(item));
+
+// map
+array.map(item => console.log(item + 1));
+
+// filter
+array.filter(item => console.log(item % 2 === 0));
+
+// reduce
+let sum = array.reduce((accumulator, item) => {return accumulator + item}, 0);
+console.log(sum);
