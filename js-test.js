@@ -80,3 +80,22 @@ array.filter(item => console.log(item % 2 === 0));
 // reduce
 let sum = array.reduce((accumulator, item) => {return accumulator + item}, 0);
 console.log(sum);
+
+// object stuff
+const myObj = {
+    name: "nick",
+    age: 40,
+    jobs: ["Poker Dealer", "Web Developer"],
+    address: {
+        street: "3403 Mcneil Street",
+        city: "Dallas",
+        state: "Texas",
+        zip: 75227
+    }
+}
+
+console.log(myObj);
+console.log(myObj.name);
+console.log(myObj.age);
+console.log(myObj.jobs);
+console.log(myObj.address);
