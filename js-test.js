@@ -36,7 +36,23 @@ console.log(stripString("hellO crUel world"));
 const reverseString = str => str.split("").reverse().join("");
 console.log(reverseString("hello"));
 
-// is palindrome
+// is palindrome(case insensative)
 const isPalindrome = str => str.toLowerCase() === reverseString(str.toLowerCase());
 console.log(isPalindrome("boB"));
+
+//array stuff
+
+let array = [1, 2, 3, 4, 5];
+
+array.push(6);
+console.log(array);
+
+array.unshift(0);
+console.log(array);
+
+array.pop()
+console.log(array);
+
+array.shift();
+console.log(array);
 
