@@ -104,7 +104,7 @@ console.log(myObj.address);
 let btn = document.createElement("button");
 btn.innerText = "button";
 btn.addEventListener("click", () => {
-    alert("cliocked!");
+    alert("clicked!");
 })
 document.body.appendChild(btn);
 
