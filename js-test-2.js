@@ -17,3 +17,8 @@ const fib = n => {
 for(let i = 0; i < 10; i++) {
     console.log(fib(i))
 }
+
+// reverse a string
+const revString = str => str.split("").reverse().join("");
+
+console.log(revString("hello"));
