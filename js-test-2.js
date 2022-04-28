@@ -36,8 +36,11 @@ console.log(revString2("hello world"));
 const isPalindrome = str => str === revString(str);
 console.log(isPalindrome("bobby"));
 
-// array manipulations
+// strip string of vowels
+const noVowels = str => str.replace(/[aeiou]/ig, "");
+console.log(noVowels("hellO world"));
 
+// array manipulations
 let array = [1, 2, 3, 4, 5, 6];
 
 // push
