@@ -35,3 +35,23 @@ console.log(revString2("hello world"));
 // is palindrome 
 const isPalindrome = str => str === revString(str);
 console.log(isPalindrome("bobby"));
+
+// array manipulations
+
+let array = [1, 2, 3, 4, 5, 6];
+
+// for each loop
+array.forEach(item => console.log(item));
+
+// map
+ let mappedArr = array.map(item => item + 2);
+ console.log(mappedArr);
+
+ // filter
+ let filteredArr = array.filter(item => item % 2 === 0);
+ console.log(filteredArr);
+
+ // reduce
+ let reducedArr = array.reduce((accumulator, item) => { return accumulator + item}, 0);
+ console.log(reducedArr);
+
