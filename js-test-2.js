@@ -23,7 +23,6 @@ const revString = str => str.split("").reverse().join("");
 console.log(revString("hello"));
 
 // another reverse a string method
-
 const revString2 = str => {
     let arr = [];
     for(let i = str.length -1; i >= 0; i--) {
@@ -31,5 +30,8 @@ const revString2 = str => {
     }
     return arr.join("");
 }
-
 console.log(revString2("hello world"));
+
+// is palindrome 
+const isPalindrome = str => str === revString(str);
+console.log(isPalindrome("bobby"));
