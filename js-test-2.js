@@ -40,6 +40,22 @@ console.log(isPalindrome("bobby"));
 
 let array = [1, 2, 3, 4, 5, 6];
 
+// push
+array.push(7);
+console.log(array);
+
+// unshift
+array.unshift(0);
+console.log(array);
+
+// shift
+array.shift();
+console.log(array);
+
+// pop
+array.pop();
+console.log(array);
+
 // for each loop
 array.forEach(item => console.log(item));
 
@@ -54,4 +70,6 @@ array.forEach(item => console.log(item));
  // reduce
  let reducedArr = array.reduce((accumulator, item) => { return accumulator + item}, 0);
  console.log(reducedArr);
+
+
 
