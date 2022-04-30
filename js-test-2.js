@@ -90,3 +90,6 @@ const myObj = {
 }
 
 // accessing object data
+console.log(myObj.name);
+console.log(myObj. jobs);
+console.log(myObj.address);
