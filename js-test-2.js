@@ -75,4 +75,18 @@ array.forEach(item => console.log(item));
  console.log(reducedArr);
 
 
+// object stuff
+const myObj = {
+    name: "Nick",
+    age: 40,
+    jobs: ["poker dealer, software enginner"],
+    address: {
+        street: "3403 mcneil street",
+        city: "dallas",
+        state: "texas",
+        zip: 75227
+    },
+    isCool: true
+}
 
+// accessing object data
