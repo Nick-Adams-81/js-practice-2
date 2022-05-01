@@ -97,5 +97,7 @@ console.log(myObj.address);
 // dom stuff
 let btn = document.createElement("button");
 btn.innerText = "click me";
+btn.style.color = "green";
+btn.style.backgroundColor = "gold";
 btn.addEventListener("click", () => { alert("clicked me")} );
 document.body.append(btn);
