@@ -94,12 +94,13 @@ const myObj = {
     }
 }
 
+// console.log(myObj);
+// console.log(myObj.name);
+// console.log(myObj.age);
+// console.log(myObj.jobs);
+// console.log(myObj.address);
+myObj.isCool = true;
 console.log(myObj);
-console.log(myObj.name);
-console.log(myObj.age);
-console.log(myObj.jobs);
-console.log(myObj.address);
-
 // dom stuff
 let btn = document.createElement("button");
 btn.innerText = "button";
