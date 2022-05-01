@@ -93,3 +93,9 @@ const myObj = {
 console.log(myObj.name);
 console.log(myObj. jobs);
 console.log(myObj.address);
+
+// dom stuff
+let btn = document.createElement("button");
+btn.innerText = "click me";
+btn.addEventListener("click", () => { alert("clicked me")} );
+document.body.append(btn);
