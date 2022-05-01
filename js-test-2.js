@@ -106,3 +106,18 @@ btn.style.backgroundColor = "gold";
 btn.addEventListener("click", () => { alert("clicked me")} );
 document.body.append(btn);
 document.body.append(div);
+
+// fetch api stuff
+
+// promises
+// fetch("https://jsonplaceholder.typicode.com/users")
+// .then(res => res.json())
+// .then(data => console.log(data))
+
+
+// async await
+const fetchApi = async () => (await fetch("https://jsonplaceholder.typicode.com/users")).json()
+
+
+console.log(fetchApi());
+
