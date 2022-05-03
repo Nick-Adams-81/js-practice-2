@@ -110,14 +110,19 @@ document.body.append(div);
 // fetch api stuff
 
 // promises
-fetch("https://jsonplaceholder.typicode.com/users")
-.then(res => res.json())
-.then(data => console.log(data))
+// fetch("https://jsonplaceholder.typicode.com/users")
+// .then(res => res.json())
+// .then(data => console.log(data))
 
 
 // async await
 const fetchApi = async () => (await fetch("https://jsonplaceholder.typicode.com/users")).json()
 
 
-console.log(fetchApi());
+// console.log(fetchApi());
+
+let array2 = [5, 12, 1, 76, 14 ,9, 24];
+let sortedArray = array2.sort((a, b) => a - b);
+console.log(sortedArray);
+
 
