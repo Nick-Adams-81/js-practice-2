@@ -75,7 +75,7 @@ array.forEach(item => console.log(item));
  console.log(reducedArr);
 
 
-// object stuff
+object stuff
 const myObj = {
     name: "Nick",
     age: 40,
@@ -89,40 +89,64 @@ const myObj = {
     isCool: true
 }
 
-// accessing object data
+accessing object data
 console.log(myObj.name);
 console.log(myObj. jobs);
 console.log(myObj.address);
 
-// dom stuff
+dom stuff
 let btn = document.createElement("button");
 let div = document.createElement("div");
 let h1 = document.createElement("h1");
 h1.innerText = "test h1";
 div.append(h1);
-btn.innerText = "click me";
+btn.innerText = "click me";sessionStorage.setItem()
 btn.style.color = "green";
 btn.style.backgroundColor = "gold";
 btn.addEventListener("click", () => { alert("clicked me")} );
 document.body.append(btn);
 document.body.append(div);
 
-// fetch api stuff
+fetch api stuff
 
-// promises
-// fetch("https://jsonplaceholder.typicode.com/users")
-// .then(res => res.json())
-// .then(data => console.log(data))
+promises
+fetch("https://jsonplaceholder.typicode.com/users")
+.then(res => res.json())
+.then(data => console.log(data))
 
 
-// async await
+async await
 const fetchApi = async () => (await fetch("https://jsonplaceholder.typicode.com/users")).json()
 
 
-// console.log(fetchApi());
+console.log(fetchApi());
 
 let array2 = [5, 12, 1, 76, 14 ,9, 24];
 let sortedArray = array2.sort((a, b) => a - b);
 console.log(sortedArray);
+
+let award = sessionStorage.setItem("award", true)
+console.log(award);
+
+jQuery(document).ready(function () {
+    jQuery.ajax("https://jsonplaceholder.typicode.com/users")
+        .done(function (data) {
+            console.log(data, "success!!")
+        })
+        .fail(function(err) {
+            console.log(err)
+        })
+ 
+})
+
+
+// cookies retrieval
+document.cookie.split(";").map(cookie => cookie.split(","))
+
+
+
+
+
+
 
 
