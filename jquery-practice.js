@@ -18,6 +18,19 @@ $(document).ready(function() {
         console.log("something broke!", err)
     })
 
+    $.post("https://jsonplaceholder.typicode.com/posts", {
+        name: "Nick",
+        city: "Dallas",
+        state: "Texas",
+        street: "3403 Mcneil Street"
+    })
+    .done(function(data) {
+        console.log(data)
+    })
+    .fail(function(err) {
+        console.log(err)
+    })
+
 
 
 
