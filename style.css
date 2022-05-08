@@ -1,9 +1,9 @@
 body {
-    background-color: orange;
+    background-color: purple;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 568px) {
     body {
-        background-color: green;
+        background-color: blue;
     }
 }

@@ -13,7 +13,7 @@ $(document).ready(function () {
     form.append(cityInput)
     document.body.append(form)
 
-    $("body").css("background-color", "green")
+    $("body").css("color", "yellow")
     $(button).click(function () {
         alert("ive been clicked")
 
