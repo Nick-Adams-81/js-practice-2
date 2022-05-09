@@ -2,16 +2,22 @@ $(document).ready(function () {
 
     // basic button and making background color in jquery
     var button = document.createElement("button")
+
+    // creating html elements
     let nameInput = document.createElement("input")
     let cityInput = document.createElement("input")
     let form = document.createElement("form")
-    let name = document.createElement("h2")
+    let name = document.createElement("h1")
     let email = document.createElement("p")
+    let div = document.createElement("div")
     button.innerText = "click me"
+    // appending the form with input foelds
     form.append(button)
     form.append(nameInput)
     form.append(cityInput)
+    // appending the body of the document
     document.body.append(form)
+    document.body.append(div)
 
     $("body").css("color", "yellow")
     $(button).click(function () {
@@ -27,7 +33,7 @@ $(document).ready(function () {
             data.map(function(data) {
                 name.innerText = data.name
                 email.innerText = data.email
-                document.body.append(name, email)
+                div.append(name, email)
             })
          
         })
