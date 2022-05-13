@@ -16,7 +16,7 @@ $(document).ready(function () {
     // appending the body of the document
     document.body.append(form)
     document.body.append(div)
-
+   
     $("body").css("color", "yellow")
     $(button).click(function (e) {
         e.preventDefault()
@@ -25,7 +25,7 @@ $(document).ready(function () {
         let nameInput = document.querySelector("#name")
         let cityInput = document.querySelector("#email")
 
-        jQuery.post("https://jsonplaceholder.typicode.com/posts", {
+        $.post("https://jsonplaceholder.typicode.com/posts", {
             name: nameInput.value,
             city: cityInput.value,
             // state: "Texas",
