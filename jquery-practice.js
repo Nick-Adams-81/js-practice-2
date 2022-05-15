@@ -25,6 +25,7 @@ $(document).ready(function () {
         let nameInput = document.querySelector("#name")
         let cityInput = document.querySelector("#email")
 
+        // ajax post route
         $.post("https://jsonplaceholder.typicode.com/posts", {
             name: nameInput.value,
             city: cityInput.value,
