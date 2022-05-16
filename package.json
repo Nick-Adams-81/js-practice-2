@@ -1,0 +1,23 @@
+{
+  "name": "js-stuff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "algo.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nick-Adams-81/js-practice-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nick-Adams-81/js-practice-2/issues"
+  },
+  "homepage": "https://github.com/Nick-Adams-81/js-practice-2#readme",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
+}

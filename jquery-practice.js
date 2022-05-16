@@ -46,19 +46,19 @@ $(document).ready(function () {
 
 
     // ajax call to json placeholder
-    // $.ajax("https://jsonplaceholder.typicode.com/users")
-    //     .done(function (data) {
-    //         console.log("much success", data)
-    //         data.map(function (data) {
-    //             name.innerText = data.name
-    //             email.innerText = data.email
-    //             div.append(name, email)
-    //         })
+    $.ajax("https://jsonplaceholder.typicode.com/users")
+        .done(function (data) {
+            console.log("much success", data)
+            data.map(function (data) {
+                name.innerText = data.name
+                email.innerText = data.email
+                div.append(name, email)
+            })
 
-    //     })
-    //     .fail(function (err) {
-    //         console.log("something broke!", err)
-    //     })
+        })
+        .fail(function (err) {
+            console.log("something broke!", err)
+        })
 
 
         const getFetch  = async (url) => {
