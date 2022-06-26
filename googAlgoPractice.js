@@ -45,7 +45,7 @@ const sumDepths = (node, level) => {
 }
 
 // matrix finding all adjacent 1 values
-function explore(i, j, size, matrix, visited) {
+const explore = (i, j, size, matrix, visited) => {
     if(visited[i][j]) return size
   
     visited[i][j] = true
@@ -59,7 +59,7 @@ function explore(i, j, size, matrix, visited) {
     return size
   }
 
-  function riverSizes(matrix) {
+  const riverSizes = (matrix) => {
     const visited = []
     for(let i = 0; i < matrix.length; i++) {
       const line = new Array(matrix[i].length).fill(null)
