@@ -44,4 +44,19 @@ console.log(getIndexToIns([10, 20, 30, 40, 50], 30));
 const mutation = arr => arr[1].toLowerCase().split("").every(letter => arr[0].toLowerCase().indexOf(letter) !== -1);
 console.log(mutation(["hello", "hello"]));
 
+// validate subsequence
+const isSubequence = (arr, seq) => {
+    let index = 0
+    for(let i = 0; i < arr.length; i++) {
+        if(index === seq.length) {
+            break
+        } 
+        if(arr[i] === seq[index] && index < seq.length) {
+            index++
+        }
+    }
+    return index === seq.length
+}
+console.log(isSubequence([1, 2, 4, 6], [1, 5, 6]))
+
 
