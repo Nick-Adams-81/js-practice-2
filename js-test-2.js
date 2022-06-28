@@ -75,7 +75,7 @@ array.forEach(item => console.log(item));
  console.log(reducedArr);
 
 
-object stuff
+//object stuff
 const myObj = {
     name: "Nick",
     age: 40,
@@ -89,12 +89,12 @@ const myObj = {
     isCool: true
 }
 
-accessing object data
+//accessing object data
 console.log(myObj.name);
 console.log(myObj. jobs);
 console.log(myObj.address);
 
-dom stuff
+//dom stuff
 let btn = document.createElement("button");
 let div = document.createElement("div");
 let h1 = document.createElement("h1");
@@ -107,7 +107,7 @@ btn.addEventListener("click", () => { alert("clicked me")} );
 document.body.append(btn);
 document.body.append(div);
 
-fetch api stuff
+//fetch api stuff
 
 promises
 fetch("https://jsonplaceholder.typicode.com/users")
@@ -115,7 +115,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
 .then(data => console.log(data))
 
 
-async await
+//async await
 const fetchApi = async () => (await fetch("https://jsonplaceholder.typicode.com/users")).json()
 
 
